@@ -29,15 +29,13 @@
     ```
 - UnionToIntersection: 用于将联合类型转为交叉类型:
     ```
-     interface T1 {
-         a: string;
-         b?: string;
-         c: string;
-         d?: string;
+     // test 
+     interface T1 
+         a: string
      }
-     //test:
-     type T4 = RequiredKeys<T1>;
-     //T4: "a" | "c" 
-
-
+     interface T2 
+         b: string
+     }
+     type T3 = UnidKeys<T1>;
+     //T3: T1 & T2
     ```
