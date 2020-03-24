@@ -29,7 +29,6 @@
     ```
 - UnionToIntersection: 用于将联合类型转为交叉类型:
     ```
-     // test 
      interface T1 
          a: string
      }
