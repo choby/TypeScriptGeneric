@@ -35,6 +35,6 @@
      interface T2 
          b: string
      }
-     type T3 = UnidKeys<T1>;
+     type T3 = UnidKeys<T1 | T2>;
      //T3: T1 & T2
     ```
